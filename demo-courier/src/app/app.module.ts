@@ -76,6 +76,7 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     COMPONENTS
   ],
+  exports: [ InputTextModule ],
   providers: [],
   bootstrap: [AppComponent]
 })

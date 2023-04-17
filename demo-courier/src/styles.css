@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --primary-color: #FF565E;
+    --secondary-color: black;
+    --third-color: #e2e2e2;
+    --text-name-color: #959595;
+}
+
+@font-face {
+    font-family: 'CarnasW03';
+    src: url('assets/fonts/CarnasW03-Regular.woff') format('woff');
+}
+
+* {
+    font-family: 'CarnasW03';
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #f3f3f3;
+    width: 100%;
+    height: 100%;
+}
