@@ -21,7 +21,58 @@ html {
 
 body {
     margin: 0;
-    background-color: #e13636;
+    background-color: var(--primary-color);
     width: 100%;
     height: 100%;
+}
+
+.p-tabmenu-nav {
+    display: inline-flex;
+    border-width: 0px !important;
+}
+
+.p-tabmenu-nav-container {
+    text-align: center;
+    box-shadow: 0px 4px 15px rgb(0 0 0 / 25%);
+    background: #ffffff
+}
+
+.p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link {
+    padding: 1.05rem 3.25rem;
+}
+
+.p-tabmenu .p-tabmenu-nav .p-tabmenu-ink-bar {
+    height: 3px;
+    background-color: #000000;
+}
+
+.p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link {
+    color: #000000;
+}
+
+.p-tabview-nav {
+    justify-content: center;
+    background: #ffffff !important;
+    border-width: 0px !important;
+}
+
+.p-tabview-nav-container {
+    box-shadow: 0px 4px 15px rgb(0 0 0 / 25%);
+}
+
+.p-tabview .p-tabview-nav li .p-tabview-nav-link {
+    padding: 1.75rem 3.25rem;
+}
+
+.p-tabview .p-tabview-nav .p-tabview-ink-bar {
+    height: 3px;
+    background-color: #000000;
+}
+
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    color: #000000;
+}
+
+.p-tabview .p-tabview-panels {
+    background: transparent;
 }
