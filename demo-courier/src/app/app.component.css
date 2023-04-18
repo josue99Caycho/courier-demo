@@ -1,8 +1,3 @@
-:host ::ng-deep {
-    .p-card {
-        padding-left: 0px;
-    }
-}
 .ruta-main > span {
     padding-right: 50px;
 }
@@ -16,43 +11,4 @@
 
 .ruta-child > p-calendar {
    width: 190px;
-}
-
-// Buttons
-
-.p-button > button {
-    background-color: var(--primary-color) !important;
-    border-radius: 100px !important;
-}
-
-.b-primary {
-    background-color: var(--primary-color) !important;
-    border-radius: 100px;
-}
-
-.b-transparent {
-    background-color: transparent !important;
-    color: #000000 !important;
-    border: 2px solid !important;
-    border-radius: 100px;
-}
-
-.b-secondary {
-    background-color: #FF1D531F !important;
-    color: #FF1D53 !important;
-    border: 1px solid !important;
-    border-radius: 100px;
-}
-
-.b-third {
-    background-color: #FF1D53 !important;
-    color: #FFFFFF !important;
-    border: 1px solid !important;
-    border-radius: 100px;
-}
-
-.b-black {
-    background-color: #000000 !important;
-    color: #ffffff !important;
-    border-radius: 100px;
 }
