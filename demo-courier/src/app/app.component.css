@@ -12,3 +12,7 @@
 .ruta-child > p-calendar {
    width: 190px;
 }
+
+.position-icon {
+    right: 58px;
+}
