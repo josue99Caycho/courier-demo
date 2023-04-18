@@ -8,9 +8,11 @@ import {MessageService} from 'primeng/api';
 })
 export class AppComponent implements OnInit {
 
-  date1: any;
- 
-  menu: object [] = [];  
+  products: object[] = [];
+
+  menu: object [] = [];
+
+  today: Date = new Date();
 
   isVisibleForm = true;
 
@@ -25,6 +27,11 @@ export class AppComponent implements OnInit {
       {label: 'SOFTPAD'},
       {label: 'SEARCH', icon: 'pi pi-search'},
   ];
+
+    this.products = [ 
+      { name: 'OUT OUTBOUND'},
+      { name: 'INBOUND'}
+    ]
   }
 
   grabarForm() {

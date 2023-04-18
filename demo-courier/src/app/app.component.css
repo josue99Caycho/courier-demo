@@ -1,5 +1,19 @@
 :host ::ng-deep {
     .p-card {
-        padding-left: 50px;
+        padding-left: 0px;
     }
+}
+.ruta-main > span {
+    padding-right: 50px;
+}
+.ruta-child {
+    padding-right: 20px;
+}
+
+.ruta-child {
+    padding-left: 50px;
+}
+
+.ruta-child > p-calendar {
+   width: 190px;
 }

@@ -15,71 +15,71 @@
                     <span class="font-light text-primary text-center">DATOS GENERALES</span>
                 </div>
                 <form>
-                    <div class="p-fluid grid col-12 md:col-12 card-content md:m-auto">
+                    <div class="p-fluid grid col-12 md:col-12 card-content md:m-0 md:p-0 flex align-items-center">
                         <!--SUCURSAL-->
-                        <div class="col-12 md:col-4 flex-column">
-                            <span class="col-2 text-700 md:pr-7">Sucursal</span>
+                        <div class="col-12 md:col-4 flex">
+                            <span class="col-2 text-700">Sucursal</span>
                             <input class="col" type="text" pInputText placeholder="Codigo + Descripcion">
                         </div>
 
                         <!--PRODUCTO-->
-                        <div class="col-12 md:col-4 flex-column">
-                            <span class="col-2 text-700 md:pr-7">Producto</span>
-                            <input class="col" type="text" pInputText placeholder="Codigo + Descripcion">
+                        <div class="col-12 md:col-4 flex">
+                            <span class="col-2 text-700">Producto</span>
+                            <p-dropdown class="col" [options]="products"  placeholder="Selecciona un producto" optionLabel="name" [showClear]="true"></p-dropdown>
                         </div>
 
                         <!--GUÍA NRO-->
-                        <div class="col-12 md:col-1 flex-column">
-                            <span class="col-1 text-700 md:pr-7">Guía</span>
+                        <div class="col-12 md:col-1 flex">
+                            <span class="col-5 text-700 md:pr-4">Guía</span>
                             <input class="col" type="text" pInputText placeholder="Codigo">
                         </div>
 
                         <!--ESTACIÓN-->
-                        <div class="col-12 md:col-3 flex-column">
-                            <span class="col-2 text-700 md:pr-7">Estación</span>
+                        <div class="col-12 md:col-3 flex">
+                            <span class="col-2 text-700 md:pr-2">Estación</span>
                             <input class="col" type="text" pInputText placeholder="Codigo + Descripcion">
                         </div>
 
                         <!--F. REGISTRO-->
-                        <div class="col-12 md:col-2 flex-column">
-                            <span class="col-3 text-700 md:pr-7">F. Registro</span>
-                            <p-calendar placeholder="DD-MM-AAAA"></p-calendar>
+                        <div class="col-12 md:col-2 flex">
+                            <span class="col-6 text-700 md:pr-2">F. Registro</span>
+                            <span class="col text-500">{{ today | date: 'dd/MM/yyyy'}}</span>
                         </div>
 
                         <!--F. GUÍA-->
-                        <div class="col-12 md:col-2 flex-column">
-                            <span class="col-3 text-700 md:pr-7">F. Guía</span>
+                        <div class="col-12 md:col-2 flex">
+                            <span class="col-3 text-700">F. Guía</span>
                             <p-calendar placeholder="DD-MM-AAAA"></p-calendar>
                         </div>
 
                         <!--ORIGEN-->
-                        <div class="col-12 md:col-2 flex-column">
-                            <span class="col-2 text-700 md:pr-5">Origen</span>
+                        <div class="col-12 md:col-2 flex">
+                            <span class="col-3 text-700 md:pr-5">Origen</span>
                             <input class="col" type="text" pInputText placeholder="Codigo">
                         </div>
 
                         <!--DESTINO-->
-                        <div class="col-12 md:col-2 flex-column">
-                            <span class="col-2 text-700 md:pr-5">Destino</span>
+                        <div class="col-12 md:col-2 flex">
+                            <span class="col-3 text-700 md:pr-5">Destino</span>
                             <input class="col" type="text" pInputText placeholder="Codigo">
                         </div>
 
                         <!--MANIFIESTO-->
-                        <div class="col-12 md:col-4 flex-column">
-                            <span class="col-3 text-700">Manifiesto</span>
+                        <div class="col-12 md:col-1 flex-column">
+                            <span class="col-1 text-700">Manifiesto</span>
                             <input class="col" type="text" pInputText placeholder="Codigo + Descripcion">
                         </div>
 
                         <!--RUTA-->
-                        <div class="col-12 md:col-2 flex-column">
-                            <span class="col-1 text-700">Ruta</span>
-                            <input class="col-2" class="col-6" type="text" pInputText placeholder="Codigo">
+                        <div class="col-12 md:col-1 flex ruta-main">
+                            <span class="col-3 text-700">Ruta</span>
+                            <input class="col ruta__main--input" class="col-6" type="text" pInputText placeholder="Codigo">
                         </div>
 
                         <!--F. RUTA-->
-                        <div class="col-12 md:col-2 flex-column">
+                        <div class="col-12 md:col-2 flex ruta-child">
                             <span class="col-3 text-700">F. Ruta</span>
-                            <p-calendar placeholder="DD-MM-AAAA"></p-calendar>
+                            <p-calendar class="ruta__child--calendar" placeholder="DD-MM-AAAA"></p-calendar>
                         </div>
                     </div>
                 </form>

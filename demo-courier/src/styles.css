@@ -81,7 +81,7 @@ body {
 }
 
 input {
-    height: 40px;
+    height: 35px;
 }
 
 .p-card .p-card-content {
@@ -95,7 +95,7 @@ input {
 }
 
 .card-content span {
-    font-size: 14px !important;
+    font-size: 12px !important;
 }
 
 .p-card {
@@ -153,6 +153,11 @@ body {
 .p-card {
     background: #ffffffbe !important;
     border: 0.5px solid #F0445E !important;
+}
+
+.p-card-body {
+    margin: 0px !important;
+    padding: 0px !important;
 }
 
 
