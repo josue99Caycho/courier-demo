@@ -15,5 +15,8 @@
 
 .b-primary {
     background-color: var(--primary-color) !important;
-    border-radius: 100px;
+    border-radius: 100px; 
+}
+.position-icon {
+    right: 58px;
 }

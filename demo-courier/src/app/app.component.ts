@@ -50,10 +50,9 @@ export class AppComponent implements OnInit {
 
   grabarForm() {
     this.isVisibleForm = false 
-    this.isVisibleForm = true
     this.messageService.add({severity:'success', summary:'Confirmación', detail:'Se Guardo con Exito '});
-    // setTimeout(() => {
-    //     this.isVisibleForm = true
-    // },0);
+    setTimeout(() => {
+        this.isVisibleForm = true
+    },0);
   }
 }
