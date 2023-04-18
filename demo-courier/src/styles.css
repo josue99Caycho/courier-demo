@@ -84,7 +84,8 @@ body {
 
 .p-inputtext {
     margin: 0;
-    height: 30px;
+    height: 35px;
+    border: 1px solid #b8b8b8 !important;
 }
 
 .card-content span {
@@ -94,3 +95,25 @@ body {
 .p-card {
     border-radius: 10px !important;
 }
+
+.p-tabmenu .p-tabmenu-nav .p-tabmenuitem:first-child {
+    background-image: url("../../demo-courier/src/assets/img/Raster.png") !important;
+    background-repeat: no-repeat !important; /* Para evitar que se repita la imagen */
+    background-size: cover !important;
+    padding-left: 35px !important;
+}
+
+.p-tabmenu .p-tabmenu-nav .p-tabmenuitem:first-child a {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+li:first-child img {
+    outline: 2px solid var(--primary-color);
+}
+
+.p-tabmenu .p-tabmenu-nav .p-tabmenuitem:last-child {
+    margin: auto !important;
+}
+
+
