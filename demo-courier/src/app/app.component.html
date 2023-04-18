@@ -55,12 +55,12 @@
                         <!--ORIGEN-->
                         <div class="col-12 md:col-2 flex">
                             <span class="col-3 text-700 md:pr-5">Origen</span>
-                            <input class="col" type="text" pInputText placeholder="Codigo">
+                            <span class="col text-500">PE/LIM</span>
                         </div>
 
                         <!--DESTINO-->
                         <div class="col-12 md:col-2 flex">
-                            <span class="col-3 text-700 md:pr-5">Destino</span>
+                            <span class="col-4 text-700 md:pr-5">Destino</span>
                             <input class="col" type="text" pInputText placeholder="Codigo">
                         </div>
 
@@ -147,16 +147,16 @@
                             <input class="col" type="text" pInputText placeholder="Referencia">
 
                             <span class="col-2 text-700">Cod. Post</span>
-                            <input class="col" type="text" pInputText placeholder="Estado">
+                            <p-dropdown [options]="listStatus" optionLabel="name" [showClear]="true" placeholder="Codigo"></p-dropdown>
                         </div>
 
                         <!--Cuidad- País- Estado -->
                         <div class="col-12 md:col-10 flex gap-1">
                             <span class="col-2 text-700">Ciudad</span>
-                            <input class="col" type="text" pInputText placeholder="Codigo + Pais">
+                            <input class="col" type="text" pInputText placeholder="Cuidad">
 
                             <span class="col-2 text-700">Pais</span>
-                            <input class="col" type="text" pInputText placeholder="Codigo">
+                            <input class="col" type="text" pInputText placeholder="Codigo + País">
 
                             <span class="col-2 text-700">Estado</span>
                             <p-dropdown class="col pt-0 md:pt-0" [options]="listStatus"  placeholder="" optionLabel="name" [showClear]="true"></p-dropdown>
@@ -178,14 +178,14 @@
                         <div class="col-12 md:col-10 flex gap-1">
                             <span class="col-2 text-700">Código</span>
                             <input class="col" type="text" pInputText placeholder="Codigo + Descripcion">
-                            <button class="col-4 b-primary text-white cursor-pointer" type="text">Crear nuevo cliente</button>
+                            <button class="col-4 b-primary text-white cursor-pointer" type="text">Crear nuevo destinatario</button>
                         </div>
 
                         <!--SUCURSAL-->
                         <div class="col-12 md:col-10 flex gap-1">
                             <span class="col-2 text-700">Sucursal</span>
                             <input class="col" type="text" pInputText placeholder="Codigo + Descripcion">
-                            <button class="col-4 b-white-pink text-white cursor-pointer" type="text">Actualizar datos cliente</button>
+                            <button class="col-4 b-white-pink text-white cursor-pointer" type="text">Actualizar datos destinatario</button>
                         </div>
 
                         <!--CONTACTO-->
@@ -227,16 +227,16 @@
                             <input class="col" type="text" pInputText placeholder="Referencia">
 
                             <span class="col-2 text-700">Cod. Post</span>
-                            <input class="col" type="text" pInputText placeholder="Estado">
+                            <p-dropdown [options]="listStatus" optionLabel="name" [showClear]="true" placeholder="Codigo"></p-dropdown>
                         </div>
 
                         <!--Cuidad- País- Estado -->
                         <div class="col-12 md:col-10 flex gap-1">
                             <span class="col-2 text-700">Ciudad</span>
-                            <input class="col" type="text" pInputText placeholder="Codigo + Pais">
+                            <input class="col" type="text" pInputText placeholder="Cuidad">
 
                             <span class="col-2 text-700">Pais</span>
-                            <input class="col" type="text" pInputText placeholder="Codigo">
+                            <input class="col" type="text" pInputText placeholder="Codigo + País">
 
                             <span class="col-2 text-700">Estado</span>
                             <p-dropdown class="col pt-0 md:pt-0" [options]="listStatus"  placeholder="" optionLabel="name" [showClear]="true"></p-dropdown>

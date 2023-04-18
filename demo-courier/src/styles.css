@@ -146,8 +146,7 @@ li:first-child img {
 
 body {
     background-image: url("../../demo-courier/src/assets/img/image.png") !important;
-    background-repeat: no-repeat !important; /* Para evitar que se repita la imagen */
-    background-size: cover !important;
+    background-size: 100% !important;
 }
 
 .p-card {
