@@ -98,31 +98,39 @@
                         <div class="col-12 md:col-10 flex">
                             <span class="col-2 text-700">Código</span>
                             <input class="col" type="text" pInputText placeholder="Codigo + Descripcion">
-                            <div class="md:m-auto md:pl-2">
-                                <i class="pi pi-plus" style="font-size: 1.3rem"></i>
-                            </div>
+                            <button class="col-4 b-primary text-white cursor-pointer" type="text">Crear nuevo cliente</button>
                         </div>
 
                         <!--SUCURSAL-->
                         <div class="col-12 md:col-10 flex">
                             <span class="col-2 text-700">Sucursal</span>
                             <input class="col" type="text" pInputText placeholder="Codigo + Descripcion">
+                            <button class="col-4 b-white-pink text-white cursor-pointer" type="text">Actualizar datos cliente</button>
                         </div>
 
                         <!--CONTACTO-->
                         <div class="col-12 md:col-10 flex">
                             <span class="col-2 text-700">Contacto</span>
-                            <input class="col" type="text" pInputText placeholder="Nombre + Telefono">
+                            <input class="col" type="text" pInputText placeholder="Nombre Telefono">
+
+                            <span class="col-2 text-700">Telefono</span>
+                            <input class="col" type="text" pInputText placeholder="Telefono">
                         </div>
-                        <!--CUENTA FEDEX-->
+                        <!--DOCUMENTOS-->
                         <div class="col-12 md:col-10 flex">
-                            <span class="col-2 text-700">Cuenta Fedex</span>
+                            <span class="col-2 text-700">Tipo Doc</span>
+                            <p-dropdown class="col" [options]="typeDocuments"  placeholder="" optionLabel="name" [showClear]="true"></p-dropdown>
+
+                            <span class="col text-700">Nro Doc</span>
+                            <input class="col" type="text" pInputText placeholder="Codigo">
+
+                            <span class="col text-700">Cuenta Fedex</span>
                             <input class="col" type="text" pInputText placeholder="Codigo">
                         </div>
 
                         <!--COMPAÑIA-->
                         <div class="col-12 md:col-10 flex">
-                            <span class="col-2 text-700">Compañia</span>
+                            <span class="col-2 text-700">N. Comercial</span>
                             <input class="col" type="text" pInputText placeholder="Nombre">
                         </div>
 
@@ -133,27 +141,24 @@
                                 placeholder="Calle + Nro + Urbanización + Distrito">
                         </div>
 
-                        <!--CIUDAD-->
-                        <div class="col-12 md:col-5 flex">
-                            <span class="col-4 text-700">Ciudad</span>
-                            <input class="col" type="text" pInputText placeholder="Ciudad">
-                        </div>
+                        <!--Referecia - Codigo postal -->
+                        <div class="col-12 md:col-10 flex">
+                            <span class="col-2 text-700">Referencia</span>
+                            <input class="col" type="text" pInputText placeholder="Referencia">
 
-                        <!--ESTADO-->
-                        <div class="col-12 md:col-5 flex">
-                            <span class="col-3 text-700">Estado</span>
+                            <span class="col-2 text-700">Cod. Post</span>
                             <input class="col" type="text" pInputText placeholder="Estado">
                         </div>
 
-                        <!--PAIS-->
-                        <div class="col-12 md:col-5 flex">
-                            <span class="col-4 text-700">Pais</span>
+                        <!--Cuidad- País- Estado -->
+                        <div class="col-12 md:col-10 flex">
+                            <span class="col-2 text-700">Ciudad</span>
                             <input class="col" type="text" pInputText placeholder="Codigo + Pais">
-                        </div>
 
-                        <!--CODIGO POSTAL-->
-                        <div class="col-12 md:col-5 flex">
-                            <span class="col-3 text-700">Codigo postal</span>
+                            <span class="col-2 text-700">Pais</span>
+                            <input class="col" type="text" pInputText placeholder="Codigo">
+
+                            <span class="col-2 text-700">Estado</span>
                             <input class="col" type="text" pInputText placeholder="Codigo">
                         </div>
                     </div>

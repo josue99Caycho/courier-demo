@@ -8,6 +8,8 @@ import {MessageService} from 'primeng/api';
 })
 export class AppComponent implements OnInit {
 
+  typeDocuments: object[] = [];
+
   products: object[] = [];
 
   menu: object [] = [];
@@ -31,6 +33,11 @@ export class AppComponent implements OnInit {
     this.products = [ 
       { name: 'OUT OUTBOUND'},
       { name: 'INBOUND'}
+    ]
+
+    this.typeDocuments = [ 
+      { name: 'DNI'},
+      { name: 'RUC'}
     ]
   }
 
