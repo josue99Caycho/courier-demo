@@ -130,9 +130,18 @@ input {
     color: #47525E !important;
 }
 
-li:first-child img {
-    outline: 2px solid var(--primary-color);
+.p-element:nth-child(5) {
+    margin-right: auto !important;
 }
+
+.p-element:nth-child(6) {
+    background-color: #e5e9f29c !important;
+}
+
+.p-element:nth-child(6) a span{
+    color: #47525E !important;
+}
+
 
 .p-tabmenu-nav-container {
     background: transparent !important;
