@@ -256,7 +256,7 @@
 
                     <!--Caja-->
                     <div class="col-12 md:col-5 flex">
-                        <span class="col-3 text-700">T.Caja
+                        <span class="col-4 text-700">T.Caja
                         </span>
                         <input class="col" type="text" pInputText placeholder="Código + Descripción">
                     </div>
@@ -271,48 +271,51 @@
                     <!--# Paquetes-->
                     <div class="col-12 md:col-5 flex">
                         <span class="col-4 text-700"># Paquetes</span>
-                        <input class="col" type="text" pInputText placeholder="Código + Descripción">
+                        <input class="col" type="text" pInputText placeholder="Número + Peso [kg]">
                     </div>
 
-                    <span class="field col-12 md:col-6">
+                    <span class="grid col-12 md:col-6 pr-0 pb-0 mb-0">
 
                             <!--Largo-->
                         <div class="col-12 md:col-5 flex">
-                            <span class="text-700">Largo
+                            <span class="col-5 text-700">Largo
                             </span>
                             <input class="col" type="text" pInputText placeholder="Medida [cm]">
                         </div>
 
                         <!--Ancho-->
                         <div class="col-12 md:col-5 flex">
-                            <span class=" text-700">Ancho
+                            <span class="col-5 text-700">Ancho
                             </span>
                             <input class="col" type="text" pInputText placeholder="Medida [cm]">
                         </div>
 
                         <!--Alto-->
                         <div class="col-12 md:col-5 flex">
-                            <span class=" text-700">Alto
+                            <span class="col-5 text-700">Alto
                             </span>
                             <input class="col" type="text" pInputText placeholder="Medida [cm]">
                         </div>
 
                         <!--Peso-->
                         <div class="col-12 md:col-5 flex">
-                            <span class=" text-700">Peso Vol.</span>
-                            <input class="col" type="text" pInputText placeholder="Peso[kg]">
+                            <span class="col-5 text-700">Peso Vol.</span>
+                            <input class="col" type="text" pInputText placeholder="Peso [kg]">
                         </div>
+
                     </span>
 
-                    <div class="field col-12 md:col-6">
-                        <img>
+                    <div class="field col-12 md:col-6 pt-0">
+                        <img class="h-5rem" src="../../../../../../../assets/img/caja2.png">
+                        <img class="h-5rem" src="../../../../../../../assets/img/caja1.jpg">
+                        <img class="h-5rem" src="../../../../../../../assets/img/caja1.jpg">
                     </div>
 
                     <!--Descripción-->
-                    <div class="col-12 md:col-5 flex">
+                    <div class="col-12 md:col-5 flex pt-0">
                         <span class="col-4 text-700">Descripción
                         </span>
-                        <input class="col" type="text" pInputText placeholder="Código + Descripción">
+                        <input class="col" type="text" pInputText placeholder="Descripción">
                     </div>
 
                     <!--C.MERC-->
@@ -326,7 +329,7 @@
                     <div class="col-12 md:col-5 flex">
                         <span class="col-4 text-700">País de Fab
                         </span>
-                        <input class="col" type="text" pInputText placeholder="Código + Descripción">
+                        <input class="col" type="text" pInputText placeholder="Código + País">
                     </div>
 
                     <!--T.Servicio-->
@@ -353,13 +356,13 @@
                     <div class="col-12 md:col-5 flex">
                         <span class="col-4 text-700">V.Transp.
                         </span>
-                        <input class="col" type="text" pInputText placeholder="Código + Descripción">
+                        <input class="col" type="text" pInputText placeholder="[$] Monto">
                     </div>
 
                     <!--V.Aduana-->
                     <div class="col-12 md:col-5 flex">
                         <span class="col-4 text-700">V.Aduana</span>
-                        <input class="col" type="text" pInputText placeholder="Codigo">
+                        <input class="col" type="text" pInputText placeholder="[$] Monto">
                     </div>
             
                 </div>
@@ -378,184 +381,121 @@
                     </div>
                 
                     <!-- Inputs Datos Facturacion -->
-                    <div class="p-fluid grid col-12 md:col-12 card-content md:mx-6">
+                    <div class="p-fluid grid col-12 card-content">
 
 
-                        <!--Embalaje-->
-                    <div class="col-12 md:col-5 flex">
-                        <span class="col-4 text-700">T.Embalaje
-                        </span>
-                        <input class="col" type="text" pInputText placeholder="Código + Descripción">
-                    </div>
-
-                    <!--Caja-->
-                    <div class="col-12 md:col-5 flex">
-                        <span class="col-3 text-700">T.Caja
-                        </span>
-                        <input class="col" type="text" pInputText placeholder="Código + Descripción">
-                    </div>
-
-                    <!--Paquete-->
-                    <div class="col-12 md:col-5 flex">
-                        <span class="col-4 text-700">T.Paquete
-                        </span>
-                        <input class="col" type="text" pInputText placeholder="Código + Descripción">
-                    </div>
-
-                    <!--# Paquetes-->
-                    <div class="col-12 md:col-5 flex">
-                        <span class="col-4 text-700"># Paquetes</span>
-                        <input class="col" type="text" pInputText placeholder="Código + Descripción">
-                    </div>
-                
-
-                        <div class="field col-12 md:col-7">
-                            <span class="p-float-label">
-                                <span class="col-6">Pago Transporte</span>
-                                <input
-                                    id="identity_Card_Number"
-                                    pInputText>
-                                <label for="identity_Card_Number">Código + Descripción</label>
+                        <!--Pago Transporte-->
+                        <div class="col-12 md:col-8 flex">
+                            <span class="col-4 text-700">Pago Transporte
                             </span>
+                            <input class="col" type="text" pInputText placeholder="Código + Descripción">
+                        </div>
+
+                        <!--Cuenta-->
+                        <div class="col-12 md:col-4 flex">
+                            <span class="col-4 text-700">Cuenta
+                            </span>
+                            <input class="col" type="text" pInputText placeholder="Cuenta">
+                        </div>
+
+                        <!--Pago Impuestos-->
+                        <div class="col-12 md:col-8 flex">
+                            <span class="col-4 text-700">Pago Impuestos
+                            </span>
+                            <input class="col" type="text" pInputText placeholder="Código + Descripción">
+                        </div>
+
+                        <!--Cuenta-->
+                        <div class="col-12 md:col-4 flex">
+                            <span class="col-4 text-700">Cuenta</span>
+                            <input class="col" type="text" pInputText placeholder="Cuenta">
                         </div>
                 
+                        <br>
 
-                        <div class="field col-12 md:col-5">
-                            <span class="p-float-label">
-                                <span>Cuenta</span>
-                                <input
-                                    pInputText >
-                                <label>Cuenta"</label>
+                        <span class="col-12 md:col-12 text-red-500  py-2">*Llenar sólo en caso de que el pagador sea un tercero</span>
+
+                        <br>
+
+                        <!--Referencia-->
+                        <div class="col-12 md:col-11 flex">
+                            <span class="col-3 text-700">Referencia
                             </span>
+                            <input class="col" type="text" pInputText placeholder="Código + Descripción">
                         </div>
 
-
-                        <div class="field col-12 md:col-7">
-                            <span class="p-float-label p-input-icon-right">
-                                <span>Pago Impuestos</span>
-                                <input
-                                    pInputText>
-                                <label>Código + Descripción</label>
+                        
+                        <!--Sucursal-->
+                        <div class="col-12 md:col-11 flex">
+                            <span class="col-3 text-700">Sucursal
                             </span>
+                            <input class="col" type="text" pInputText placeholder="Código + Descripción">
                         </div>
 
-                        <div class="field col-12 md:col-5">
-                            <span class="p-float-label">
-                                <span>Cuenta</span>
-                                <input
-                                    pInputText >
-                                <label>Cuenta</label>
+                        <!--Flete-->
+                        <div class="col-12 md:col-4 flex">
+                            <span class="col-4 text-700">Flete
                             </span>
+                            <input class="col" type="text" pInputText placeholder="[$ Monto]">
                         </div>
 
-                        <span class="text-base text-red-500 text-400">*Llenar sólo en caso de que el pagador sea un tercero</span>
-
-                        <div class="field col-12 md:col-8">
-                            <span class="p-float-label p-input-icon-right">
-                                <span>Refrencia</span>
-                                <input
-                                    pInputText>
-                                <label>Código + Descripción</label>
+                        <!--Dscto-->
+                        <div class="col-12 md:col-4 flex">
+                            <span class="col-4 text-700">Dscto
                             </span>
-                        </div>
-                
-                        <div class="field col-12 md:col-8">
-                            <span class="p-float-label">
-                                <span>Sucursal</span>
-                                <input
-                                    pInputText >
-                                <label>Código + Descripción</label>
-                            </span>
+                            <input class="col" type="text" pInputText placeholder="[$ Monto]">
                         </div>
 
-                        <div class="field col-12 md:col-2">
-                            <span class="p-float-label">
-                                <span>Flete</span>
-                                <input
-                                    pInputText>
-                                <label>[$ Monto]</label>
+                        
+                        <!--FAU-->
+                        <div class="col-12 md:col-4 flex">
+                            <span class="col-4 text-700">FAU
                             </span>
-                        </div>
-                
-
-                        <div class="field col-12 md:col-2">
-                            <span class="p-float-label">
-                                <span>Dscto</span>
-                                <input
-                                    pInputText >
-                                <label>[$ Monto]</label>
-                            </span>
+                            <input class="col" type="text" pInputText placeholder="[$ Monto]">
                         </div>
 
-                        <div class="field col-12 md:col-2">
-                            <span class="p-float-label">
-                                <span>FAU</span>
-                                <input
-                                    pInputText>
-                                <label>[$ Monto]</label>
+                        <!--Fuel-->
+                        <div class="col-12 md:col-4 flex">
+                            <span class="col-4 text-700">Fuel
                             </span>
-                        </div>
-                
-
-                        <div class="field col-12 md:col-2">
-                            <span class="p-float-label">
-                                <span>Fuel</span>
-                                <input
-                                    pInputText >
-                                <label>[$ Monto]</label>
-                            </span>
+                            <input class="col" type="text" pInputText placeholder="[$ Monto]">
                         </div>
 
-                        <div class="field col-12 md:col-2">
-                            <span class="p-float-label">
-                                <span>Otros</span>
-                                <input
-                                    pInputText>
-                                <label>[$] Monto</label>
+                        <!--Otros-->
+                        <div class="col-12 md:col-4 flex">
+                            <span class="col-4 text-700">Otros
                             </span>
+                            <input class="col" type="text" pInputText placeholder="[$ Monto]">
                         </div>
 
-                        <div class="field col-12 md:col-3">
-                            <span class="p-float-label">
-                                <span>L.Resp.</span>
-                                <input
-                                    pInputText >
-                                <label>[$] Monto</label>
+                        <!--L.Resp.-->
+                        <div class="col-12 md:col-4 flex">
+                            <span class="col-4 text-700">L.Resp.
                             </span>
+                            <input class="col" type="text" pInputText placeholder="[$ Monto]">
                         </div>
 
-                        <div class="field col-12 md:col-3">
-                            <span class="p-float-label">
-                                <span>IGV</span>
-                                <input
-                                    pInputText >
-                                <label>[$] Monto</label>
+                        <!--IGV-->
+                        <div class="col-12 md:col-4 flex">
+                            <span class="col-4 text-700">IGV
                             </span>
+                            <input class="col" type="text" pInputText placeholder="[$ Monto]">
                         </div>
 
-                        <div class="field col-12 md:col-5">
-                            <span class="p-float-label">
-                                <span>Importe TOTAL</span>
-                                <input
-                                    pInputText >
-                                <label>[$] Monto</label>
+                        <!--Importe TOTAL-->
+                        <div class="col-12 md:col-7 flex">
+                            <span class="col-3 text-700">Importe TOTAL
                             </span>
+                            <input class="col" type="text" pInputText placeholder="[$ Monto]">
                         </div>
 
-                        <div class="field col-12 md:col-1">
+                        <div class="col-12 md:col-1 pt-0">
                             <button
                                 pButton
-                                pRipple
-                                type="reset"
-                                icon="pi pi-save"
                                 class="p-button-rounded p-button-text text-500"
-                                pTooltip="Ver informacion de cliente"
+                                pTooltip="Registrar"
                                 (click)="grabarForm()"
-                            ></button>
-                        </div>
-
-                        <div>
-                            <img>
+                            ><img class="h-2rem" src="../../../../../../../assets/img/discket.png"></button>
                         </div>
                         
                     </div>
