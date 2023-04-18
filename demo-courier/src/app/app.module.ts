@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ButtonModule } from 'primeng/button';
 import { AccordionModule } from 'primeng/accordion';
@@ -30,7 +31,7 @@ import { RadioButtonModule } from 'primeng/radiobutton';
 import { SkeletonModule } from 'primeng/skeleton';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { TableModule } from 'primeng/table';
-
+import { ConfirmationService, MessageService } from 'primeng/api';
 
 const COMPONENTS = [
   AnimateModule,
@@ -75,9 +76,12 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     COMPONENTS
   ],
-  providers: [],
+  providers: [
+    MessageService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

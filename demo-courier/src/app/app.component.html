@@ -1,4 +1,4 @@
-<div class="main">
+<div class="main" *ngIf="isVisibleForm">
 
     <!--CABECERA-->
     <nav>
@@ -235,13 +235,336 @@
         </div>
 
         <!--Sección de datos paquete-->
-        <div class="datos-paquete">
-            <!--DAVID-->
+        <div class="col-12 md:col-6">
+            <p-card class="col-12 md:col-6">
+                
+                <div class="pb-4">
+                    <h3 class="text-center my-0 font-normal">
+                        <span class="text-base text-red-500 text-400">DATOS PAQUETE</span>
+                    </h3>
+                </div>
+            
+                <!-- Inputs Datos paquete -->
+                <div class="p-fluid grid col-12 md:col-12 card-content md:mx-6">
+
+                    <!--Embalaje-->
+                    <div class="col-12 md:col-5 flex">
+                        <span class="col-4 text-700">T.Embalaje
+                        </span>
+                        <input class="col" type="text" pInputText placeholder="Código + Descripción">
+                    </div>
+
+                    <!--Caja-->
+                    <div class="col-12 md:col-5 flex">
+                        <span class="col-3 text-700">T.Caja
+                        </span>
+                        <input class="col" type="text" pInputText placeholder="Código + Descripción">
+                    </div>
+
+                    <!--Paquete-->
+                    <div class="col-12 md:col-5 flex">
+                        <span class="col-4 text-700">T.Paquete
+                        </span>
+                        <input class="col" type="text" pInputText placeholder="Código + Descripción">
+                    </div>
+
+                    <!--# Paquetes-->
+                    <div class="col-12 md:col-5 flex">
+                        <span class="col-4 text-700"># Paquetes</span>
+                        <input class="col" type="text" pInputText placeholder="Código + Descripción">
+                    </div>
+
+                    <span class="field col-12 md:col-6">
+
+                            <!--Largo-->
+                        <div class="col-12 md:col-5 flex">
+                            <span class="text-700">Largo
+                            </span>
+                            <input class="col" type="text" pInputText placeholder="Medida [cm]">
+                        </div>
+
+                        <!--Ancho-->
+                        <div class="col-12 md:col-5 flex">
+                            <span class=" text-700">Ancho
+                            </span>
+                            <input class="col" type="text" pInputText placeholder="Medida [cm]">
+                        </div>
+
+                        <!--Alto-->
+                        <div class="col-12 md:col-5 flex">
+                            <span class=" text-700">Alto
+                            </span>
+                            <input class="col" type="text" pInputText placeholder="Medida [cm]">
+                        </div>
+
+                        <!--Peso-->
+                        <div class="col-12 md:col-5 flex">
+                            <span class=" text-700">Peso Vol.</span>
+                            <input class="col" type="text" pInputText placeholder="Peso[kg]">
+                        </div>
+                    </span>
+
+                    <div class="field col-12 md:col-6">
+                        <img>
+                    </div>
+
+                    <!--Descripción-->
+                    <div class="col-12 md:col-5 flex">
+                        <span class="col-4 text-700">Descripción
+                        </span>
+                        <input class="col" type="text" pInputText placeholder="Código + Descripción">
+                    </div>
+
+                    <!--C.MERC-->
+                    <div class="col-12 md:col-5 flex">
+                        <span class="col-4 text-700">C.MERC.
+                        </span>
+                        <input class="col" type="text" pInputText placeholder="Código + Descripción">
+                    </div>
+
+                    <!--País de Fab-->
+                    <div class="col-12 md:col-5 flex">
+                        <span class="col-4 text-700">País de Fab
+                        </span>
+                        <input class="col" type="text" pInputText placeholder="Código + Descripción">
+                    </div>
+
+                    <!--T.Servicio-->
+                    <div class="col-12 md:col-5 flex">
+                        <span class="col-4 text-700">T.Servicio</span>
+                        <input class="col" type="text" pInputText placeholder="Código + Descripción">
+                    </div>
+
+                    <!--I/E-->
+                    <div class="col-12 md:col-5 flex">
+                        <span class="col-4 text-700">I/E
+                        </span>
+                        <input class="col" type="text" pInputText placeholder="Código + Descripción">
+                    </div>
+
+                    <!--T.Carga-->
+                    <div class="col-12 md:col-5 flex">
+                        <span class="col-4 text-700">T.Carga
+                        </span>
+                        <input class="col" type="text" pInputText placeholder="Código + Descripción">
+                    </div>
+
+                    <!--V.Transp.-->
+                    <div class="col-12 md:col-5 flex">
+                        <span class="col-4 text-700">V.Transp.
+                        </span>
+                        <input class="col" type="text" pInputText placeholder="Código + Descripción">
+                    </div>
+
+                    <!--V.Aduana-->
+                    <div class="col-12 md:col-5 flex">
+                        <span class="col-4 text-700">V.Aduana</span>
+                        <input class="col" type="text" pInputText placeholder="Codigo">
+                    </div>
+            
+                </div>
+            </p-card>
         </div>
 
-        <!--Sección de datos pago-->
-        <div class="datos-pago">
-            <!--DAVID-->
+        <!--Datos Pago -->
+        <div class="col-12 md:col-6">
+            <p-card class="col-12 md:col-6">
+                <div class="px-5">
+                
+                    <div class="pb-4">
+                        <h3 class="text-center my-0 font-normal">
+                            <span class="text-base text-red-500 text-400">DATOS PAGO</span>
+                        </h3>
+                    </div>
+                
+                    <!-- Inputs Datos Facturacion -->
+                    <div class="p-fluid grid col-12 md:col-12 card-content md:mx-6">
+
+
+                        <!--Embalaje-->
+                    <div class="col-12 md:col-5 flex">
+                        <span class="col-4 text-700">T.Embalaje
+                        </span>
+                        <input class="col" type="text" pInputText placeholder="Código + Descripción">
+                    </div>
+
+                    <!--Caja-->
+                    <div class="col-12 md:col-5 flex">
+                        <span class="col-3 text-700">T.Caja
+                        </span>
+                        <input class="col" type="text" pInputText placeholder="Código + Descripción">
+                    </div>
+
+                    <!--Paquete-->
+                    <div class="col-12 md:col-5 flex">
+                        <span class="col-4 text-700">T.Paquete
+                        </span>
+                        <input class="col" type="text" pInputText placeholder="Código + Descripción">
+                    </div>
+
+                    <!--# Paquetes-->
+                    <div class="col-12 md:col-5 flex">
+                        <span class="col-4 text-700"># Paquetes</span>
+                        <input class="col" type="text" pInputText placeholder="Código + Descripción">
+                    </div>
+                
+
+                        <div class="field col-12 md:col-7">
+                            <span class="p-float-label">
+                                <span class="col-6">Pago Transporte</span>
+                                <input
+                                    id="identity_Card_Number"
+                                    pInputText>
+                                <label for="identity_Card_Number">Código + Descripción</label>
+                            </span>
+                        </div>
+                
+
+                        <div class="field col-12 md:col-5">
+                            <span class="p-float-label">
+                                <span>Cuenta</span>
+                                <input
+                                    pInputText >
+                                <label>Cuenta"</label>
+                            </span>
+                        </div>
+
+
+                        <div class="field col-12 md:col-7">
+                            <span class="p-float-label p-input-icon-right">
+                                <span>Pago Impuestos</span>
+                                <input
+                                    pInputText>
+                                <label>Código + Descripción</label>
+                            </span>
+                        </div>
+
+                        <div class="field col-12 md:col-5">
+                            <span class="p-float-label">
+                                <span>Cuenta</span>
+                                <input
+                                    pInputText >
+                                <label>Cuenta</label>
+                            </span>
+                        </div>
+
+                        <span class="text-base text-red-500 text-400">*Llenar sólo en caso de que el pagador sea un tercero</span>
+
+                        <div class="field col-12 md:col-8">
+                            <span class="p-float-label p-input-icon-right">
+                                <span>Refrencia</span>
+                                <input
+                                    pInputText>
+                                <label>Código + Descripción</label>
+                            </span>
+                        </div>
+                
+                        <div class="field col-12 md:col-8">
+                            <span class="p-float-label">
+                                <span>Sucursal</span>
+                                <input
+                                    pInputText >
+                                <label>Código + Descripción</label>
+                            </span>
+                        </div>
+
+                        <div class="field col-12 md:col-2">
+                            <span class="p-float-label">
+                                <span>Flete</span>
+                                <input
+                                    pInputText>
+                                <label>[$ Monto]</label>
+                            </span>
+                        </div>
+                
+
+                        <div class="field col-12 md:col-2">
+                            <span class="p-float-label">
+                                <span>Dscto</span>
+                                <input
+                                    pInputText >
+                                <label>[$ Monto]</label>
+                            </span>
+                        </div>
+
+                        <div class="field col-12 md:col-2">
+                            <span class="p-float-label">
+                                <span>FAU</span>
+                                <input
+                                    pInputText>
+                                <label>[$ Monto]</label>
+                            </span>
+                        </div>
+                
+
+                        <div class="field col-12 md:col-2">
+                            <span class="p-float-label">
+                                <span>Fuel</span>
+                                <input
+                                    pInputText >
+                                <label>[$ Monto]</label>
+                            </span>
+                        </div>
+
+                        <div class="field col-12 md:col-2">
+                            <span class="p-float-label">
+                                <span>Otros</span>
+                                <input
+                                    pInputText>
+                                <label>[$] Monto</label>
+                            </span>
+                        </div>
+
+                        <div class="field col-12 md:col-3">
+                            <span class="p-float-label">
+                                <span>L.Resp.</span>
+                                <input
+                                    pInputText >
+                                <label>[$] Monto</label>
+                            </span>
+                        </div>
+
+                        <div class="field col-12 md:col-3">
+                            <span class="p-float-label">
+                                <span>IGV</span>
+                                <input
+                                    pInputText >
+                                <label>[$] Monto</label>
+                            </span>
+                        </div>
+
+                        <div class="field col-12 md:col-5">
+                            <span class="p-float-label">
+                                <span>Importe TOTAL</span>
+                                <input
+                                    pInputText >
+                                <label>[$] Monto</label>
+                            </span>
+                        </div>
+
+                        <div class="field col-12 md:col-1">
+                            <button
+                                pButton
+                                pRipple
+                                type="reset"
+                                icon="pi pi-save"
+                                class="p-button-rounded p-button-text text-500"
+                                pTooltip="Ver informacion de cliente"
+                                (click)="grabarForm()"
+                            ></button>
+                        </div>
+
+                        <div>
+                            <img>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </p-card>
         </div>
     </section>
 </div>
+
+<p-toast></p-toast>

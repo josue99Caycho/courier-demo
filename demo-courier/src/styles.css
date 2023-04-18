@@ -78,6 +78,10 @@ body {
     background: transparent;
 }
 
+input {
+    height: 40px;
+}
+
 .p-card .p-card-content {
     padding: 0 !important;
 }
