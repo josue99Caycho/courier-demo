@@ -6,21 +6,232 @@
     </nav>
 
     <!--BODY-->
-    <section class="container">
+    <section class="p-fluid grid px-6 py-2 col-12 flex-wrap">
 
         <!--Sección de datos generales-->
-        <div class="datos-generales">
+        <div>
+            <p-card class="col-12 md:col-12">
+                <div class="text-center col-12">
+                    <span class="font-light text-primary text-center">DATOS GENERALES</span>
+                </div>
+                <form>
+                    <div class="p-fluid grid col-12 md:col-12 card-content md:m-auto">
+                        <!--SUCURSAL-->
+                        <div class="col-12 md:col-4 flex-column">
+                            <span class="col-2 text-700 md:pr-7">Sucursal</span>
+                            <input class="col" type="text" pInputText placeholder="Codigo + Descripcion">
+                        </div>
 
+                        <!--PRODUCTO-->
+                        <div class="col-12 md:col-4 flex-column">
+                            <span class="col-2 text-700 md:pr-7">Producto</span>
+                            <input class="col" type="text" pInputText placeholder="Codigo + Descripcion">
+                        </div>
+
+                        <!--GUÍA NRO-->
+                        <div class="col-12 md:col-1 flex-column">
+                            <span class="col-1 text-700 md:pr-7">Guía</span>
+                            <input class="col" type="text" pInputText placeholder="Codigo">
+                        </div>
+
+                        <!--ESTACIÓN-->
+                        <div class="col-12 md:col-3 flex-column">
+                            <span class="col-2 text-700 md:pr-7">Estación</span>
+                            <input class="col" type="text" pInputText placeholder="Codigo + Descripcion">
+                        </div>
+
+                        <!--F. REGISTRO-->
+                        <div class="col-12 md:col-2 flex-column">
+                            <span class="col-3 text-700 md:pr-7">F. Registro</span>
+                            <p-calendar placeholder="DD-MM-AAAA"></p-calendar>
+                        </div>
+
+                        <!--F. GUÍA-->
+                        <div class="col-12 md:col-2 flex-column">
+                            <span class="col-3 text-700 md:pr-7">F. Guía</span>
+                            <p-calendar placeholder="DD-MM-AAAA"></p-calendar>
+                        </div>
+
+                        <!--ORIGEN-->
+                        <div class="col-12 md:col-2 flex-column">
+                            <span class="col-2 text-700 md:pr-5">Origen</span>
+                            <input class="col" type="text" pInputText placeholder="Codigo">
+                        </div>
+
+                        <!--DESTINO-->
+                        <div class="col-12 md:col-2 flex-column">
+                            <span class="col-2 text-700 md:pr-5">Destino</span>
+                            <input class="col" type="text" pInputText placeholder="Codigo">
+                        </div>
+
+                        <!--MANIFIESTO-->
+                        <div class="col-12 md:col-4 flex-column">
+                            <span class="col-3 text-700">Manifiesto</span>
+                            <input class="col" type="text" pInputText placeholder="Codigo + Descripcion">
+                        </div>
+
+                        <!--RUTA-->
+                        <div class="col-12 md:col-2 flex-column">
+                            <span class="col-1 text-700">Ruta</span>
+                            <input class="col-2" class="col-6" type="text" pInputText placeholder="Codigo">
+                        </div>
+
+                        <!--F. RUTA-->
+                        <div class="col-12 md:col-2 flex-column">
+                            <span class="col-3 text-700">F. Ruta</span>
+                            <p-calendar placeholder="DD-MM-AAAA"></p-calendar>
+                        </div>
+                    </div>
+                </form>
+            </p-card>
         </div>
 
         <!--Sección de datos remitente-->
-        <div class="datos-remitente">
+        <div class="col-12 md:col-6">
+            <p-card class="col-12 md:col-6">
+                <div class="text-center col-12">
+                    <span class="font-light text-primary text-center">DATOS REMITENTE</span>
+                </div>
+                <form>
+                    <div class="p-fluid grid col-12 md:col-12 card-content md:mx-6">
+                        <!--CODIGO-->
+                        <div class="col-12 md:col-10 flex">
+                            <span class="col-2 text-700">Código</span>
+                            <input class="col" type="text" pInputText placeholder="Codigo + Descripcion">
+                            <div class="md:m-auto md:pl-2">
+                                <i class="pi pi-plus" style="font-size: 1.3rem"></i>
+                            </div>
+                        </div>
 
+                        <!--SUCURSAL-->
+                        <div class="col-12 md:col-10 flex">
+                            <span class="col-2 text-700">Sucursal</span>
+                            <input class="col" type="text" pInputText placeholder="Codigo + Descripcion">
+                        </div>
+
+                        <!--CONTACTO-->
+                        <div class="col-12 md:col-10 flex">
+                            <span class="col-2 text-700">Contacto</span>
+                            <input class="col" type="text" pInputText placeholder="Nombre + Telefono">
+                        </div>
+                        <!--CUENTA FEDEX-->
+                        <div class="col-12 md:col-10 flex">
+                            <span class="col-2 text-700">Cuenta Fedex</span>
+                            <input class="col" type="text" pInputText placeholder="Codigo">
+                        </div>
+
+                        <!--COMPAÑIA-->
+                        <div class="col-12 md:col-10 flex">
+                            <span class="col-2 text-700">Compañia</span>
+                            <input class="col" type="text" pInputText placeholder="Nombre">
+                        </div>
+
+                        <!--DIRECCIÓN-->
+                        <div class="col-12 md:col-10 flex">
+                            <span class="col-2 text-700">Dirección</span>
+                            <input class="col" type="text" pInputText
+                                placeholder="Calle + Nro + Urbanización + Distrito">
+                        </div>
+
+                        <!--CIUDAD-->
+                        <div class="col-12 md:col-5 flex">
+                            <span class="col-4 text-700">Ciudad</span>
+                            <input class="col" type="text" pInputText placeholder="Ciudad">
+                        </div>
+
+                        <!--ESTADO-->
+                        <div class="col-12 md:col-5 flex">
+                            <span class="col-3 text-700">Estado</span>
+                            <input class="col" type="text" pInputText placeholder="Estado">
+                        </div>
+
+                        <!--PAIS-->
+                        <div class="col-12 md:col-5 flex">
+                            <span class="col-4 text-700">Pais</span>
+                            <input class="col" type="text" pInputText placeholder="Codigo + Pais">
+                        </div>
+
+                        <!--CODIGO POSTAL-->
+                        <div class="col-12 md:col-5 flex">
+                            <span class="col-3 text-700">Codigo postal</span>
+                            <input class="col" type="text" pInputText placeholder="Codigo">
+                        </div>
+                    </div>
+                </form>
+            </p-card>
         </div>
 
         <!--Sección de datos destinatario-->
-        <div class="datos-destinatario">
+        <div class="col-12 md:col-6">
+            <p-card class="col-12 md:col-6">
+                <div class="text-center col-12">
+                    <span class="font-light text-primary text-center">DATOS DESTINATARIO</span>
+                </div>
+                <form>
+                    <div class="p-fluid grid col-12 md:col-12 card-content md:mx-6">
+                        <!--CODIGO-->
+                        <div class="col-12 md:col-10 flex">
+                            <span class="col-2 text-700">Código</span>
+                            <input class="col" type="text" pInputText placeholder="Codigo + Descripcion">
+                        </div>
 
+                        <!--SUCURSAL-->
+                        <div class="col-12 md:col-10 flex">
+                            <span class="col-2 text-700">Sucursal</span>
+                            <input class="col" type="text" pInputText placeholder="Codigo + Descripcion">
+                        </div>
+
+                        <!--CONTACTO-->
+                        <div class="col-12 md:col-10 flex">
+                            <span class="col-2 text-700">Contacto</span>
+                            <input class="col" type="text" pInputText placeholder="Nombre + Telefono">
+                        </div>
+
+                        <!--CUENTA FEDEX-->
+                        <div class="col-12 md:col-10 flex">
+                            <span class="col-2 text-700">Cuenta Fedex</span>
+                            <input class="col" type="text" pInputText placeholder="Codigo">
+                        </div>
+
+                        <!--COMPAÑIA-->
+                        <div class="col-12 md:col-10 flex">
+                            <span class="col-2 text-700">Compañia</span>
+                            <input class="col" type="text" pInputText placeholder="Nombre">
+                        </div>
+
+                        <!--DIRECCIÓN-->
+                        <div class="col-12 md:col-10 flex">
+                            <span class="col-2 text-700">Dirección</span>
+                            <input class="col" type="text" pInputText
+                                placeholder="Calle + Nro + Urbanización + Distrito">
+                        </div>
+
+                        <!--CIUDAD-->
+                        <div class="col-12 md:col-5 flex">
+                            <span class="col-4 text-700">Ciudad</span>
+                            <input class="col" type="text" pInputText placeholder="Ciudad">
+                        </div>
+
+                        <!--ESTADO-->
+                        <div class="col-12 md:col-5 flex">
+                            <span class="col-3 text-700">Estado</span>
+                            <input class="col" type="text" pInputText placeholder="Estado">
+                        </div>
+
+                        <!--PAIS-->
+                        <div class="col-12 md:col-5 flex">
+                            <span class="col-4 text-700">Pais</span>
+                            <input class="col" type="text" pInputText placeholder="Codigo + Pais">
+                        </div>
+
+                        <!--CODIGO POSTAL-->
+                        <div class="col-12 md:col-5 flex">
+                            <span class="col-3 text-700">Codigo postal</span>
+                            <input class="col" type="text" pInputText placeholder="Codigo">
+                        </div>
+                    </div>
+                </form>
+            </p-card>
         </div>
 
         <!--Sección de datos paquete-->

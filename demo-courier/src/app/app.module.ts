@@ -31,6 +31,7 @@ import { SkeletonModule } from 'primeng/skeleton';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { TableModule } from 'primeng/table';
 
+
 const COMPONENTS = [
   AnimateModule,
   AccordionModule,
@@ -76,7 +77,6 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     COMPONENTS
   ],
-  exports: [ InputTextModule ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -12,6 +12,7 @@
 }
 
 * {
+    box-sizing: border-box;
     font-family: 'CarnasW03';
 }
 
@@ -75,4 +76,21 @@ body {
 
 .p-tabview .p-tabview-panels {
     background: transparent;
+}
+
+.p-card .p-card-content {
+    padding: 0 !important;
+}
+
+.p-inputtext {
+    margin: 0;
+    height: 30px;
+}
+
+.card-content span {
+    font-size: 14px !important;
+}
+
+.p-card {
+    border-radius: 10px !important;
 }
