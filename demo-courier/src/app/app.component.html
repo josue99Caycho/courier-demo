@@ -95,21 +95,21 @@
                 <form>
                     <div class="p-fluid grid col-12 md:col-12 card-content md:mx-6">
                         <!--CODIGO-->
-                        <div class="col-12 md:col-10 flex">
+                        <div class="col-12 md:col-10 flex gap-1">
                             <span class="col-2 text-700">Código</span>
                             <input class="col" type="text" pInputText placeholder="Codigo + Descripcion">
                             <button class="col-4 b-primary text-white cursor-pointer" type="text">Crear nuevo cliente</button>
                         </div>
 
                         <!--SUCURSAL-->
-                        <div class="col-12 md:col-10 flex">
+                        <div class="col-12 md:col-10 flex gap-1">
                             <span class="col-2 text-700">Sucursal</span>
                             <input class="col" type="text" pInputText placeholder="Codigo + Descripcion">
                             <button class="col-4 b-white-pink text-white cursor-pointer" type="text">Actualizar datos cliente</button>
                         </div>
 
                         <!--CONTACTO-->
-                        <div class="col-12 md:col-10 flex">
+                        <div class="col-12 md:col-10 flex gap-1">
                             <span class="col-2 text-700">Contacto</span>
                             <input class="col" type="text" pInputText placeholder="Nombre Telefono">
 
@@ -117,9 +117,9 @@
                             <input class="col" type="text" pInputText placeholder="Telefono">
                         </div>
                         <!--DOCUMENTOS-->
-                        <div class="col-12 md:col-10 flex">
+                        <div class="col-12 md:col-10 flex gap-1">
                             <span class="col-2 text-700">Tipo Doc</span>
-                            <p-dropdown class="col" [options]="typeDocuments"  placeholder="" optionLabel="name" [showClear]="true"></p-dropdown>
+                            <p-dropdown class="col pt-0 md:pt-0" [options]="typeDocuments"  placeholder="" optionLabel="name" [showClear]="true"></p-dropdown>
 
                             <span class="col text-700">Nro Doc</span>
                             <input class="col" type="text" pInputText placeholder="Codigo">
@@ -129,20 +129,20 @@
                         </div>
 
                         <!--COMPAÑIA-->
-                        <div class="col-12 md:col-10 flex">
+                        <div class="col-12 md:col-10 flex gap-1">
                             <span class="col-2 text-700">N. Comercial</span>
                             <input class="col" type="text" pInputText placeholder="Nombre">
                         </div>
 
                         <!--DIRECCIÓN-->
-                        <div class="col-12 md:col-10 flex">
+                        <div class="col-12 md:col-10 flex gap-1">
                             <span class="col-2 text-700">Dirección</span>
                             <input class="col" type="text" pInputText
                                 placeholder="Calle + Nro + Urbanización + Distrito">
                         </div>
 
                         <!--Referecia - Codigo postal -->
-                        <div class="col-12 md:col-10 flex">
+                        <div class="col-12 md:col-10 flex gap-1">
                             <span class="col-2 text-700">Referencia</span>
                             <input class="col" type="text" pInputText placeholder="Referencia">
 
@@ -151,7 +151,7 @@
                         </div>
 
                         <!--Cuidad- País- Estado -->
-                        <div class="col-12 md:col-10 flex">
+                        <div class="col-12 md:col-10 flex gap-1">
                             <span class="col-2 text-700">Ciudad</span>
                             <input class="col" type="text" pInputText placeholder="Codigo + Pais">
 
@@ -159,7 +159,7 @@
                             <input class="col" type="text" pInputText placeholder="Codigo">
 
                             <span class="col-2 text-700">Estado</span>
-                            <input class="col" type="text" pInputText placeholder="Codigo">
+                            <p-dropdown class="col pt-0 md:pt-0" [options]="listStatus"  placeholder="" optionLabel="name" [showClear]="true"></p-dropdown>
                         </div>
                     </div>
                 </form>
@@ -175,64 +175,71 @@
                 <form>
                     <div class="p-fluid grid col-12 md:col-12 card-content md:mx-6">
                         <!--CODIGO-->
-                        <div class="col-12 md:col-10 flex">
+                        <div class="col-12 md:col-10 flex gap-1">
                             <span class="col-2 text-700">Código</span>
                             <input class="col" type="text" pInputText placeholder="Codigo + Descripcion">
+                            <button class="col-4 b-primary text-white cursor-pointer" type="text">Crear nuevo cliente</button>
                         </div>
 
                         <!--SUCURSAL-->
-                        <div class="col-12 md:col-10 flex">
+                        <div class="col-12 md:col-10 flex gap-1">
                             <span class="col-2 text-700">Sucursal</span>
                             <input class="col" type="text" pInputText placeholder="Codigo + Descripcion">
+                            <button class="col-4 b-white-pink text-white cursor-pointer" type="text">Actualizar datos cliente</button>
                         </div>
 
                         <!--CONTACTO-->
-                        <div class="col-12 md:col-10 flex">
+                        <div class="col-12 md:col-10 flex gap-1">
                             <span class="col-2 text-700">Contacto</span>
-                            <input class="col" type="text" pInputText placeholder="Nombre + Telefono">
-                        </div>
+                            <input class="col" type="text" pInputText placeholder="Nombre Telefono">
 
-                        <!--CUENTA FEDEX-->
-                        <div class="col-12 md:col-10 flex">
-                            <span class="col-2 text-700">Cuenta Fedex</span>
+                            <span class="col-2 text-700">Telefono</span>
+                            <input class="col" type="text" pInputText placeholder="Telefono">
+                        </div>
+                        <!--DOCUMENTOS-->
+                        <div class="col-12 md:col-10 flex gap-1">
+                            <span class="col-2 text-700">Tipo Doc</span>
+                            <p-dropdown class="col pt-0 md:pt-0" [options]="typeDocuments"  placeholder="" optionLabel="name" [showClear]="true"></p-dropdown>
+
+                            <span class="col text-700">Nro Doc</span>
+                            <input class="col" type="text" pInputText placeholder="Codigo">
+
+                            <span class="col text-700">Cuenta Fedex</span>
                             <input class="col" type="text" pInputText placeholder="Codigo">
                         </div>
 
                         <!--COMPAÑIA-->
-                        <div class="col-12 md:col-10 flex">
-                            <span class="col-2 text-700">Compañia</span>
+                        <div class="col-12 md:col-10 flex gap-1">
+                            <span class="col-2 text-700">N. Comercial</span>
                             <input class="col" type="text" pInputText placeholder="Nombre">
                         </div>
 
                         <!--DIRECCIÓN-->
-                        <div class="col-12 md:col-10 flex">
+                        <div class="col-12 md:col-10 flex gap-1">
                             <span class="col-2 text-700">Dirección</span>
                             <input class="col" type="text" pInputText
                                 placeholder="Calle + Nro + Urbanización + Distrito">
                         </div>
 
-                        <!--CIUDAD-->
-                        <div class="col-12 md:col-5 flex">
-                            <span class="col-4 text-700">Ciudad</span>
-                            <input class="col" type="text" pInputText placeholder="Ciudad">
-                        </div>
+                        <!--Referecia - Codigo postal -->
+                        <div class="col-12 md:col-10 flex gap-1">
+                            <span class="col-2 text-700">Referencia</span>
+                            <input class="col" type="text" pInputText placeholder="Referencia">
 
-                        <!--ESTADO-->
-                        <div class="col-12 md:col-5 flex">
-                            <span class="col-3 text-700">Estado</span>
+                            <span class="col-2 text-700">Cod. Post</span>
                             <input class="col" type="text" pInputText placeholder="Estado">
                         </div>
 
-                        <!--PAIS-->
-                        <div class="col-12 md:col-5 flex">
-                            <span class="col-4 text-700">Pais</span>
+                        <!--Cuidad- País- Estado -->
+                        <div class="col-12 md:col-10 flex gap-1">
+                            <span class="col-2 text-700">Ciudad</span>
                             <input class="col" type="text" pInputText placeholder="Codigo + Pais">
-                        </div>
 
-                        <!--CODIGO POSTAL-->
-                        <div class="col-12 md:col-5 flex">
-                            <span class="col-3 text-700">Codigo postal</span>
+                            <span class="col-2 text-700">Pais</span>
                             <input class="col" type="text" pInputText placeholder="Codigo">
+
+                            <span class="col-2 text-700">Estado</span>
+                            <p-dropdown class="col pt-0 md:pt-0" [options]="listStatus"  placeholder="" optionLabel="name" [showClear]="true"></p-dropdown>
                         </div>
                     </div>
                 </form>

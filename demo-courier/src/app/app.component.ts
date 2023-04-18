@@ -8,6 +8,8 @@ import {MessageService} from 'primeng/api';
 })
 export class AppComponent implements OnInit {
 
+  listStatus: object[] = [];
+
   typeDocuments: object[] = [];
 
   products: object[] = [];
@@ -38,6 +40,11 @@ export class AppComponent implements OnInit {
     this.typeDocuments = [ 
       { name: 'DNI'},
       { name: 'RUC'}
+    ]
+
+    this.listStatus = [
+      { name: 'Activo'},
+      { name: 'Inactivo'}
     ]
   }
 

@@ -12,3 +12,8 @@
 .ruta-child > p-calendar {
    width: 190px;
 }
+
+.b-primary {
+    background-color: var(--primary-color) !important;
+    border-radius: 100px;
+}
