@@ -18,12 +18,12 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.menu = [
-      {label: '  ', style: 'background-image: url("../../demo-courier/src/assets/img/Raster.png") !important;'},
-      {label: 'Home'},
-      {label: 'Courier'},
-      {label: 'Exportaciones'},
-      {label: 'Softpad'},
-      {label: 'Search', icon: 'pi pi-search'},
+      {label: ''},
+      {label: 'HOME'},
+      {label: 'COURIER'},
+      {label: 'EXPO'},
+      {label: 'SOFTPAD'},
+      {label: 'SEARCH', icon: 'pi pi-search'},
   ];
   }
 
